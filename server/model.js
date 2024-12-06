@@ -17,18 +17,6 @@ const Todo = sequelize.define("Todo", {
   },
 });
 
-const Selected = sequelize.define("Selected", {
-  id: {
-    type: DataTypes.STRING, // Оставляем как строку
-    primaryKey: true,
-  },
-  title: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  completed: {
-    type: DataTypes.BOOLEAN,
-  },
-});
 
-module.exports = {Todo, Selected};
+
+module.exports = {Todo};

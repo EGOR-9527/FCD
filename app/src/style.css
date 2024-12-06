@@ -1,65 +1,107 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.MainInput{
+    width: 15vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.Cart {
-  border: 2px solid rgb(105, 105, 105);
-  width: 50vw;
-  height: 6vw;
-  margin: 5vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.MainButton{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.containerAdd {
-  margin-top: 6vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.blockAddTodo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.AddInput {
-  width: 16vw;
-  height: 2vw;
+.TodoList{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.AddButton {
-  border: none;
-  width: 7vw;
-  height: 2vw;
+.cartTodo{
+    margin-bottom: 10px;
+    width: 55vw;
+    height: 7vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #007bff;
+    border-radius: 5px;
 }
 
-.CartButton {
-  border: none;
-  width: 8vw;
-  height: 2vw;
-  transition: 0.4s;
+.ButtonTodo{
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.CartButton:hover {
-  background-color: rgb(212, 67, 67);
-  color: white;
+
+.BlockCompleted{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.link {
-  margin: 4vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.completedTodo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw;
+    width: 55vw;
+    height: 7vw;
+    border: 3px solid #007bff;
+    border-radius: 5px;
 }
 
-.link-teaxt {
-  margin-inline-end: 5vw;
-  color: black;
-  text-decoration: none;
+h1{
+    text-align: center;
+    margin: 2vw;
+}
+nav {
+    display: flex;
+    background-color: #007bff;
+    justify-content: center;
+    padding: 2vw;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}

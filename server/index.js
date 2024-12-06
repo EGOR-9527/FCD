@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const sequelize = require('./database');
-const todoRoutes = require('./router');
+const todoRoutes = require('./router'); // Исправлено на правильный путь
 
 const app = express();
 const PORT = process.env.PORT || 5000;
